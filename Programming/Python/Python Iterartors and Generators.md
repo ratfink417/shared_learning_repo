@@ -1,0 +1,4 @@
+# Iterators and Iterables
+In python, an _iterable_ is any object that can be looped over. To be exact, we would say any object that can be converted into an _iterator_ by the **iter()** function. For this to happen, the object **MUST** implement at least these functions **__iter__()** and **__next()__**. These function together fulfill the description of the _iterator protocol_.
+
+The **iter()** function takes an iterable object and returns it as an iterator. This resultant iterator will be something you can loop over with any of the looping mechanisms, will be able to raise flags to the interpreter as conditions like reaching the end are reached and be able to get items at the beginning, end, some offset or at whichever location in the iterator you want to address

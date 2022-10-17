@@ -1,0 +1,4 @@
+Locate is part of the findutils package. If it is not commonly installed on most lite distros so running apt-get findutils in debian will download it. Main advantage of locate over grep is that locate creates an index of all the files in the system. 
+
+## Locate Can't Find it.
+Since locate rely's on a database to find whatever it is your looking for, sometimes it wont find it cause the file was created after the last database update. Running ``updatedb`` will run a recursive search and update locate's database. If you couldn't find your file initially try running this command and then running again.
